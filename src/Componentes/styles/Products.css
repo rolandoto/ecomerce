@@ -54,3 +54,11 @@
   display: block;
   }
 }
+
+
+@media (max-width: 600px) {
+  .Products-items {
+  
+  display: block;
+  }
+}

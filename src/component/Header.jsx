@@ -8,18 +8,21 @@ export const Header = () => {
     const {cart} = state
   
     return (
+
+        
+
         <div className="Header">
         <h1 className="Header-title"> 
        
     
         <Link to="/" > 
-        platzi confi mern
+        Rolando shop
         </Link>
        </h1>
         <div className="Header-chekaout">
             
            <Link to="/Chekaout">
-           <li className=" ew fas fa-shopping-basket" /> 
+           <li className=" fas fa-shopping-basket" /> 
            {cart.length > 0 && <div className="header-alert">{cart.length}</div>}
            </Link>
           

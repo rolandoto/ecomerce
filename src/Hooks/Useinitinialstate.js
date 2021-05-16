@@ -1,4 +1,4 @@
-import  { useState } from 'react'
+import  { useEffect, useState } from 'react'
 
 import InitialStacte from '../InitialStacte'
 
@@ -6,6 +6,13 @@ const Useinitinialstate = () => {
     //Hooks 
     const [state, setstate] = useState(InitialStacte)
    
+    const {product} = state
+    
+    function myFunction() {
+        setTimeout(function(){ console.log(product); }, 3000);
+      }
+    console.log(myFunction())
+
     //agregar producto
     const Addtocart = payload => {
         setstate({
@@ -48,6 +55,7 @@ const Useinitinialstate = () => {
         AddTobuyer,
         addNerOrders,
         state,
+        setstate
     }                        
 }
 

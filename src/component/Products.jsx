@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useMemo, useRef, useState } from 'react'
+import React, { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 
 import '../Componentes/styles/Products.css'
 import Appcontex from '../context/Appcontex'
@@ -6,10 +6,10 @@ import { Product } from './Product'
 import { Search } from './Search'
 
 export const    Products = ( ) => {
-    const {state,Addtocart} = useContext(Appcontex)
+    const {state,Addtocart,setstate} = useContext(Appcontex)
     const {product} = state
-        
-    
+      console.log(state)
+   
     const handeadd = product => () =>{
         Addtocart(product)
        

@@ -11,9 +11,7 @@ const Sucess = () => {
 
     //aqui le estoy pasando datos del comprador que es buyer
     //y le estoy pasando los datos por props
-    const address = Usegoogle(buyer[0].address)
-
-
+   
     return (
         <div className="Success">
             <div className="Success-content">
@@ -21,7 +19,7 @@ const Sucess = () => {
                     <h2> ${buyer.name} por tu compra</h2>
                     <span>tu pedido llegara en 3 dias a tu direccion</span>
                 <div className="Success-map">
-            <Map data={address}/>
+         
                 
                 </div>
             </div>

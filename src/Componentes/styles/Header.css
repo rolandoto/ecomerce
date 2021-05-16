@@ -1,6 +1,7 @@
 .Header {
   display: flex;
   justify-content: space-between;
+  
 }
 .Header-checkout {
   display: flex;
@@ -23,10 +24,3 @@
 
 
 
-@media (max-width: 600px) {
-  .fa-shopping-basket:before  {
-  
-    font-size: 76px;
-
-  }
-}

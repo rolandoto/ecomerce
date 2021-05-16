@@ -12,12 +12,13 @@ const {product} = state
 console.log(product)
 
 
+
     return (
         <div>
          
             
           {/**aqui entro al initial state saclos la informacion del estado */}
-           <Products   />
+         
        
        
         </div>
